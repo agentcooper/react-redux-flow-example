@@ -1,0 +1,25 @@
+{
+  "name": "react-redux-flow-example",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "flow-bin": "^0.30.0",
+    "react-scripts": "0.2.1"
+  },
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "flow": "flow"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  }
+}
