@@ -27,11 +27,11 @@ type DispatchProps = {
 
 type Props = OwnProps & StateProps & DispatchProps;
 
-const mapStateToProps = (state: State) => ({
+const mapStateToProps = (state: State): StateProps => ({
   counter: state.ui.counter,
 });
 
-const mapDispatchToProps = (dispatch: Dispatch) => ({
+const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => ({
   increase: () => {
     dispatch(increase());
   },
