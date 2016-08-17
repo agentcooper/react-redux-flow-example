@@ -18,20 +18,21 @@ type OwnProps = {
 
 type StateProps = {
   counter: number,
-};
+} & OwnProps;
 
 type DispatchProps = {
   increase: () => void,
   decrease: () => void,
 };
 
-type Props = OwnProps & StateProps & DispatchProps;
+type Props = StateProps & DispatchProps;
 
-const mapStateToProps = (state: State): StateProps => ({
+const mapStateToProps = (state: State, ownProps: OwnProps): StateProps => ({
   counter: state.ui.counter,
+  ...ownProps,
 });
 
-const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => ({
+const mapDispatchToProps = (dispatch: Dispatch, ownProps: OwnProps): DispatchProps => ({
   increase: () => {
     dispatch(increase());
   },

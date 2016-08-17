@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={ store }>
-        <Counter />
+        <Counter text="some text" />
       </Provider>
     );
   }
