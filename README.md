@@ -10,7 +10,7 @@ Flow can check props for it: try removing `text` prop for Counter in `src/App.js
 
 ## Awkward parts
 
-You need to merge `ownProps` into `stateProps` for ownProps to be available in the connected component.
+If you want to use `ownProps` inside the connected component (not just `mapStateToProps`/`mapDispatchToProps`), you should merge `ownProps` into `stateProps` for the type check.
 
 ## To-do
 
