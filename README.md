@@ -1,6 +1,6 @@
 ### react-redux-flow-example
 
-Based on definitions done by @gcanti in https://github.com/reactjs/redux/pull/1887.
+Based on definitions done by [@gcanti](https://github.com/gcanti) in https://github.com/reactjs/redux/pull/1887.
 
 ## Current state
 
