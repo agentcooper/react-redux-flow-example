@@ -15,6 +15,7 @@ If you want to use `ownProps` inside the connected component (not just `mapState
 ## To-do
 
 - Typed thunked actions
+- Use [$Exact](https://github.com/facebook/flow/tree/master/newtests/exact) type to filter out redundant props
 
 ## Running Flow
 

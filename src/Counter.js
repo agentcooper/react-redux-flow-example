@@ -16,6 +16,7 @@ type OwnProps = {
   text: string,
 };
 
+// https://github.com/agentcooper/react-redux-flow-example#awkward-parts
 type StateProps = {
   counter: number,
 } & OwnProps;
