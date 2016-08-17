@@ -8,7 +8,7 @@ const initial = {
   counter: 0,
 };
 
-export default (state: State = initial, action: Action) => {
+export default (state: State.ui = initial, action: Action) => {
   switch (action.type) {
     case ACTION.INCREASE: {
       return {
