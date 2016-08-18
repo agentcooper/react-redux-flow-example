@@ -10,6 +10,7 @@ import type { Connector } from 'react-redux';
 import {
   increase,
   decrease,
+  increaseAsync,
 } from './actions/counter';
 
 type OwnProps = {
@@ -24,6 +25,7 @@ type StateProps = {
 type DispatchProps = {
   increase: () => void,
   decrease: () => void,
+  increaseAsync: () => void,
 };
 
 type Props = StateProps & DispatchProps;
@@ -40,6 +42,9 @@ const mapDispatchToProps = (dispatch: Dispatch, ownProps: OwnProps): DispatchPro
   decrease: () => {
     dispatch(decrease());
   },
+  increaseAsync: () => {
+    dispatch(increaseAsync(300));
+  },
 });
 
 class Counter extends Component {
@@ -51,15 +56,26 @@ class Counter extends Component {
       counter,
       increase,
       decrease,
+      increaseAsync,
     } = this.props;
+
+    const nbsp = '\u00A0';
 
     return (
       <div>
-        <div>{ text }</div>
-        <div>{ counter }</div>
+        <div>{ text } &mdash; own prop</div>
+        <div>{ counter } &mdash; computed prop</div>
         <div>
+          Basic actions:
           <button onClick={ increase }>Increase</button>
+          { nbsp }
           <button onClick={ decrease }>Decrease</button>
+          { nbsp }
+        </div>
+        <div>
+          Thunked actions:
+          { nbsp }
+          <button onClick={ increaseAsync }>Increase (async)</button>
         </div>
       </div>
     );
