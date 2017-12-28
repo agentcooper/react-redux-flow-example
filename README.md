@@ -1,3 +1,5 @@
+⚠️ Warning: this example is not up to date anymore. Please check official docs for [Flow + Redux](https://flow.org/en/docs/react/redux/).
+
 ### react-redux-flow-example
 
 Based on definitions done by [@gcanti](https://github.com/gcanti) in https://github.com/reactjs/redux/pull/1887.
